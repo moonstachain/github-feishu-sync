@@ -548,7 +548,10 @@ def enrich_repo(raw: dict[str, Any], github_token: str | None = None) -> RepoRec
     pattern_type, pattern_confidence, skill_name, use_case, entrypoint = classify_pattern(raw, signals)
     install_link, install_ready = build_install_link(raw["repo_url"], pattern_type)
 
-    has_skill_md = bool(signals.get("has_skill_md")) or raw["repo_name"] in {"youquant-backtest", "get-biji-tra"}
+    has_skill_md = bool(signals.get("has_skill_md")) or raw["repo_name"] in {
+        "youquant-backtest",
+        "get-biji-transcript",
+    }
     has_agents_yaml = bool(signals.get("has_agents_yaml")) or raw["repo_name"] == "youquant-backtest"
     root_names = signals.get("root_names", [])
     if raw["repo_name"] == "youquant-backtest":
