@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Feishu Sync"
+  short_description: "GitHub 仓库到飞书多维表的自动化同步系统"
+  default_prompt: "Use $github-feishu-sync to scan GitHub repos, classify skill patterns, sync them into Feishu Bitable, and set up realtime webhook sync."
