@@ -1,6 +1,10 @@
 ---
 name: github-feishu-sync
-description: End-to-end automation for scanning GitHub repositories, classifying broad Codex skill patterns, writing normalized results into Feishu Bitable, and wiring GitHub webhook based realtime sync. Use when the user wants to build or maintain a GitHub-to-Feishu expert brain, sync repo inventories into 多维表, classify reusable skill/workflow repos, or set up live webhook-driven updates after GitHub changes.
+description: >
+  GitHub 仓库与飞书多维表的双向同步，确保代码仓库状态和飞书治理数据一致。
+  当需要把 GitHub commit/test 结果同步到飞书、或从飞书数据触发 GitHub 更新时使用。
+  当用户说"同步到飞书"、"GitHub 状态更新"、"双向同步"时使用。
+  NOT for 单独的 GitHub 操作（用 github-usage-expert）或单独的飞书操作。
 ---
 
 # GitHub Feishu Sync
